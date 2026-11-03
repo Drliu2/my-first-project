@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的第一个项目</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e8eaed;
+      --muted: #9aa3af;
+      --accent: #6ea8fe;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(1200px 600px at 20% -10%, #1d2433, var(--bg));
+      color: var(--text);
+      font: 16px/1.7 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      padding: 24px;
+    }
+    .card {
+      width: min(680px, 100%);
+      background: var(--card);
+      border: 1px solid #232833;
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .sub { color: var(--muted); margin: 0 0 28px; font-size: 14px; }
+    h2 { font-size: 15px; margin: 28px 0 10px; color: var(--accent); font-weight: 600; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    code {
+      background: #22262f;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 14px;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dashed transparent;
+    }
+    .links a:hover { border-bottom-color: var(--accent); }
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid #232833;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>你好，我是 你的名字 👋</h1>
+    <p class="sub">这是我的第一个 GitHub 项目</p>
+
+    <h2>关于我</h2>
+    <p>这里写一两句话介绍自己。比如：一名正在学习编程的学生，喜欢折腾电脑和写小工具。</p>
+
+    <h2>这个项目是什么</h2>
+    <p>一个纯静态的个人主页，用 HTML + CSS 写在一个文件里，没有依赖、没有构建步骤。</p>
+
+    <h2>怎么改</h2>
+    <ul>
+      <li>用记事本或 VS Code 打开 <code>index.html</code></li>
+      <li>把「你的名字」换成你的名字</li>
+      <li>保存后双击文件就能在浏览器里看到效果</li>
+    </ul>
+
+    <h2>链接</h2>
+    <p class="links">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/你的用户名" target="_blank" rel="noopener">我的主页</a>
+    </p>
+
+    <footer>用 ❤️ 和一点点耐心做出来的 · 2026</footer>
+  </main>
+</body>
+</html>
